@@ -100,7 +100,172 @@
             <h3 class="text-muted">Envíanos tus dudas</h3>
           </div>
 
-          <!-- Form -->
+          <!-- FORM -->
+          <div class="row">
+            <div class="form-holder">
+              <div class="form-content">
+                <div class="form-items">
+                  <form class="requires-validation" novalidate>
+                    <!-- Input 1 Nombre -->
+                    <div class="col-md-12 mb-4">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        placeholder="Nombre completo"
+                        required
+                      />
+
+                      <div class="valid-feedback">El Nombre es valido!</div>
+
+                      <div class="invalid-feedback">
+                        El campo Nombre no puede estar en blanco!
+                      </div>
+                    </div>
+                    <!-- #End Input 1 -->
+
+                    <!-- Input 2 Correo -->
+                    <div class="col-md-12 mb-4">
+                      <input
+                        class="form-control"
+                        type="email"
+                        name="email"
+                        placeholder="Correo Electrónico"
+                        required
+                      />
+                      <div class="valid-feedback">El Correo es valido!</div>
+
+                      <div class="invalid-feedback">
+                        El campo Nombre no puede estar en blanco!
+                      </div>
+                    </div>
+                    <!-- #End Input 2 -->
+
+                    <!-- Input 3 Tipo Joyas -->
+                    <div class="col-md-12 mb-4">
+                      <select class="form-select" required>
+                        <option selected disabled value="">Joyas</option>
+                        <option value="jweb">Aros</option>
+                        <option value="sweb">Anillos</option>
+                        <option value="pmanager">Pulseras</option>
+                      </select>
+
+                      <div class="valid-feedback">
+                        A seleccionado una opción!
+                      </div>
+
+                      <div class="invalid-feedback">
+                        Por favor seleccione una opción!
+                      </div>
+                    </div>
+                    <!-- #End Input 3 -->
+
+                    <!-- Input 4 Género -->
+                    <div class="col-md-12 mb-4">
+                      <label class="mb-3 mr-1" for="gender">Género: </label>
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="gender"
+                        id="male"
+                        autocomplete="off"
+                        required
+                      />
+                      <label class="btn btn-sm btn-outline-secondary" for="male"
+                        >Hombre</label
+                      >
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="gender"
+                        id="female"
+                        autocomplete="off"
+                        required
+                      />
+                      <label
+                        class="btn btn-sm btn-outline-secondary"
+                        for="female"
+                        >Mujer</label
+                      >
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="gender"
+                        id="secret"
+                        autocomplete="off"
+                        required
+                      />
+                      <label
+                        class="btn btn-sm btn-outline-secondary"
+                        for="secret"
+                        >Indefinido</label
+                      >
+
+                      <div class="valid-feedback mv-up">
+                        A seleccionado un género!
+                      </div>
+
+                      <div class="invalid-feedback mv-up">
+                        Por favor seleccione un género!
+                      </div>
+                    </div>
+                    <!-- #End Input 4 Genero -->
+
+                    <!-- Input 5 Text-area--->
+                    <div class="col-md-12 form-check mb-4 p-0">
+                      <label
+                        for="exampleFormControlTextarea1"
+                        class="form-label">
+                        Asunto
+                      </label>
+
+                      <textarea                        
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3">
+                      </textarea>
+                    </div>
+                    <!-- #End Input 5 Text-area -->
+
+                    <!-- Input 6 Check -->
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck"
+                        required
+                      />
+                      <label class="form-check-label"
+                        >Confirmo que los datos son correctos</label
+                      >
+                      <div class="invalid-feedback">
+                        Por favor confirme que los datos ingresados son
+                        correctos!
+                      </div>
+                    </div>
+                    <!-- #End Input 6 Check -->
+
+                    <!-- Button Submit Form -->
+                    <div class="form-button mt-3">
+                      <button id="submit" type="submit" class="btn btn-primary">
+                        Enviar
+                      </button>
+
+                      <input
+                        class="btn btn-outline-secondary"
+                        type="reset"
+                        value="Reset"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- #End Form -->
         </div>
@@ -153,5 +318,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../assets/scripts.js"></script>
   </body>
 </html>
